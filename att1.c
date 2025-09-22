@@ -7,7 +7,7 @@ int main(){
     int i;
     printf("Digite um numero: \n");
     scanf("%d", &n);
-    vet = malloc(n * sizeof * vet); // a expressao 
+    vet = malloc(n * sizeof * vet); 
     for(i = 0; i < n; i++){
         printf("Digite numeros: \n");
         scanf("%d", &vet[i]);
