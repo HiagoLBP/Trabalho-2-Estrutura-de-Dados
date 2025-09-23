@@ -33,7 +33,7 @@ int main() {
     vet = tmp;
 
     for(i = n; i < n * 2; i++){
-        printf("Digite o valor adicional para a posicao %d: ", i);
+        printf("Digite o valor adicional para a posicao (Inidice %d): ", i);
         scanf("%d", &vet[i]);
     }
 

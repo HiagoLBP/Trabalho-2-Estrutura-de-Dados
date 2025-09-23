@@ -13,7 +13,7 @@ int main() {
         return 1;
     }
 
-    vet = malloc(n * sizeof *vet);
+    vet = malloc(n * sizeof *vet); 
     if (vet == NULL) {
         printf("Erro de alocacao!\n");
         return 1;

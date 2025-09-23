@@ -28,8 +28,7 @@ int main() {
 }
 
     for (i = 0; i < m; i++) {
-        mat[i] = malloc(n * sizeof *mat[i]);
-        mat[i] = malloc(n * sizeof *mat[i]);
+    mat[i] = malloc(n * sizeof *mat[i]);
     if (mat[i] == NULL) {
     printf("Erro de alocacao na linha %d\n", i);
     return 1; 
