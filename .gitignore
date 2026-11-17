@@ -1,0 +1,9 @@
+# Compilados C
+*.exe
+*.out
+*.o
+*.obj
+
+# IDEs
+.vscode/
+.idea/

@@ -1,52 +1,51 @@
-# Projeto de Estrutura de Dados
+# 🧩 Exercícios Práticos de Alocação Dinâmica (Trabalho 2 - Estrutura de Dados)
 
-**Alunos:** Daniel da Silva Oliveira e Hiago Rocha Souza  
-**Disciplina:** Estrutura de Dados  
-**Professor:** Reinaldo Monteiro Cotrim  
-**Turma:** 2ADS  
+Repositório com exercícios acadêmicos desenvolvidos em **Linguagem C**, explorando o gerenciamento manual e dinâmico de memória via ponteiros (`malloc`, `realloc`, `free`), matrizes bidimensionais dinâmicas e validação de memória.
 
-## Descrição do Projeto
+* **Alunos:** Daniel da Silva Oliveira e Hiago Rocha Souza ([@HiagoLBP](https://github.com/HiagoLBP))
+* **Disciplina:** Estrutura de Dados
+* **Professor:** Reinaldo Monteiro Cotrim
+* **Turma:** 2ADS — IF Baiano Campus Guanambi
 
-Este projeto contém exercícios práticos de C utilizando **alocação dinâmica**. O objetivo é praticar conceitos de ponteiros, gerenciamento de memória e manipulação de vetores e matrizes de forma dinâmica.
+---
 
-## Conteúdo do Projeto
+## 📌 Conteúdo das Atividades
 
-### Parte 1
+| Atividade | Arquivo | Descrição do Problema | Funções Principais |
+| :--- | :--- | :--- | :---: |
+| **Atividade 1.1** | [`ATIVIDADE 1/att1.c`](./ATIVIDADE%201/att1.c) | Alocação dinâmica de vetor com `n` inteiros e preenchimento pelo usuário | `malloc`, `free` |
+| **Atividade 1.2** | [`ATIVIDADE 1/attPT2.c`](./ATIVIDADE%201/attPT2.c) | Expansão dinâmica do vetor dobrando o tamanho via `realloc` e preservando dados | `realloc`, `free` |
+| **Atividade 2** | [`ATIVIDADE 2/att2.c`](./ATIVIDADE%202/att2.c) | Criação de Matriz dinâmica $M \times N$ (`int**`) com preenchimento $i + j$ | `malloc`, `free` |
+| **Atividade 3** | [`ATIVIDADE 3/att3.c`](./ATIVIDADE%203/att3.c) | Alocação dinâmica de vetor, leitura de $n$ elementos e soma total acumulada | `malloc`, `free` |
+| **Atividade 4** | [`ATIVIDADE 4/att4.c`](./ATIVIDADE%204/att4.c) | Vetor dinâmico de ponto flutuante (`float*`) para cálculo de média aritmética de notas | `malloc`, `free` |
 
-1. **Vetor Dinâmico (Questão 1)**  
-   - Lê um número `n` e aloca dinamicamente um vetor de `n` inteiros.  
-   - Preenche o vetor com valores fornecidos pelo usuário e imprime todos os elementos.
+---
 
-2. **Vetor Dinâmico com Realloc (Questão 2)**  
-   - Modifica o programa da Questão 1 para dobrar o tamanho do vetor usando `realloc`.  
-   - Mantém os valores antigos e permite preencher os novos elementos.
+## 🛡️ Boas Práticas Adotadas
 
-### Parte 2
+* Verificação obrigatória de integridade após alocação (`if (ponteiro == NULL)`).
+* Liberação de memória com `free()` no encerramento de todas as rotinas para evitar vazamentos (*memory leaks*).
+* Desalocação bidimensional correta de matrizes dinâmicas (linha a linha seguida do ponteiro mestre).
 
-1. **Matriz Dinâmica (int **) (Questão 1 da Parte 2)**  
-   - Cria uma matriz `m x n` usando ponteiro de ponteiro.  
-   - Preenche cada posição com `i + j` e exibe a matriz.
+---
 
-2. **Soma de Vetor de Inteiros (Questão 2 da Parte 2)**  
-   - Aloca dinamicamente um vetor de inteiros, lê `n` valores e calcula a soma de todos.
+## 🚀 Como Compilar e Executar
 
-3. **Cálculo de Média de Notas (Questão 3 da Parte 2)**  
-   - Aloca dinamicamente um vetor de floats, lê `n` notas, calcula a soma e a média, e exibe os resultados.
+Com o **GCC** instalado:
 
-## Funcionalidades
+```bash
+# Exemplo: Compilar a Atividade 2 (Matriz Dinâmica)
+gcc "ATIVIDADE 2/att2.c" -o att2
 
-- Uso de `malloc` e `realloc` para alocação dinâmica.  
-- Verificação de sucesso na alocação de memória (`!= NULL`).  
-- Validação de entrada para garantir números inteiros positivos.  
-- Liberação de memória com `free` ao final de cada programa.  
+# Executar no Windows
+.\att2.exe
 
-## Como Executar
+# Executar no Linux / macOS
+./att2
+```
 
-1. Clone o repositório.  
-2. Compile o arquivo desejado usando um compilador C, por exemplo:  
-   ```bash
-   gcc nome_do_arquivo.c -o programa.exe
+---
 
-- Depois execute: ./programa
+## 👨‍💻 Autores
 
-
+Desenvolvido por **Daniel da Silva Oliveira** e **[Hiago L. B. P.](https://github.com/HiagoLBP)**.
